@@ -2,7 +2,6 @@
 #include <fstream>
 #include <string>
 #include <vector>
-#include <regex>
 #include "main.h"
 
 void day_six_part_two_solve() {
@@ -10,8 +9,6 @@ void day_six_part_two_solve() {
     std::vector<char> buffer;
 
     std::ifstream input_file("InputFiles/Day6_Input.txt");
-
-    if (!input_file) std::cerr << "Could not open the file!" << std::endl;
 
     getline(input_file, input_line);
 
@@ -44,8 +41,6 @@ void day_six_solve() {
     std::vector<char> buffer;
 
     std::ifstream input_file("InputFiles/Day6_Input.txt");
-
-    if (!input_file) std::cerr << "Could not open the file!" << std::endl;
 
     getline(input_file, input_line);
 

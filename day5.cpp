@@ -12,8 +12,6 @@ void day_five_part_two_solve() {
 
     std::ifstream input_file("InputFiles/Day5_Input.txt");
 
-    if (!input_file) std::cerr << "Could not open the file!" << std::endl;
-
     while (getline(input_file, input_line)) {
 
         if (stack_input) {
@@ -79,8 +77,6 @@ void day_five_solve() {
     bool stack_input = true;
 
     std::ifstream input_file("InputFiles/Day5_Input.txt");
-
-    if (!input_file) std::cerr << "Could not open the file!" << std::endl;
 
     while (getline(input_file, input_line)) {
 

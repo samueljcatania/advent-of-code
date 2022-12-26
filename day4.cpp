@@ -11,8 +11,6 @@ void day_four_part_two_solve() {
 
     std::ifstream input_file("InputFiles/Day4_Input.txt");
 
-    if (!input_file) std::cerr << "Could not open the file!" << std::endl;
-
     while (getline(input_file, input_line)) {
         std::istringstream input_stream(input_line);
         std::vector<int> input_vector;
@@ -46,8 +44,6 @@ void day_four_solve() {
     int fully_contained_count = 0;
 
     std::ifstream input_file("InputFiles/Day4_Input.txt");
-
-    if (!input_file) std::cerr << "Could not open the file!" << std::endl;
 
     while (getline(input_file, input_line)) {
         std::istringstream input_stream(input_line);

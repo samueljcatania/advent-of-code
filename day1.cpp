@@ -12,9 +12,6 @@ void day_one_part_two_solve() {
 
     std::ifstream input_file("InputFiles/Day1_Input.txt");
 
-    if (!input_file) std::cerr << "Could not open the file!" << std::endl;
-
-
     while (getline(input_file, input_line)) {
 
         if (input_line.empty()) {
@@ -44,9 +41,6 @@ void day_one_solve() {
     int per_elf_sum = 0;
 
     std::ifstream input_file("InputFiles/Day1_Input.txt");
-
-    if (!input_file) std::cerr << "Could not open the file!" << std::endl;
-
 
     while (getline(input_file, input_line)) {
 
