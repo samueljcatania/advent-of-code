@@ -1,6 +1,6 @@
 #include "main.h"
 
 int main() {
-    day_six_solve();
+    day_seven_solve();
     return 0;
 }
