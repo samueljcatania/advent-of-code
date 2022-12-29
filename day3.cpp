@@ -1,6 +1,3 @@
-#include <iostream>
-#include <fstream>
-#include <string>
 #include "main.h"
 
 void day_three_part_two_solve() {

@@ -1,7 +1,3 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-
 #include "main.h"
 
 void day_one_part_two_solve() {
