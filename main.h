@@ -15,4 +15,6 @@ void day_six_solve();
 
 void day_seven_solve();
 
+void day_eight_solve();
+
 #endif //ADVENTOFCODE_2022_MAIN_H
