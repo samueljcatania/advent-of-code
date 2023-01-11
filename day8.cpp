@@ -10,6 +10,14 @@ struct Tree {
     }
 };
 
+void free_memory(const std::vector<std::vector<Tree *>>& forest) {
+    for (const std::vector<Tree *>& row: forest) {
+        for (Tree *tree: row) {
+            delete tree;
+        }
+    }
+}
+
 void day_eight_part_two_solve(std::vector<std::vector<Tree *>> forest) {
     int highest_scenic = 0;
 
@@ -56,6 +64,8 @@ void day_eight_part_two_solve(std::vector<std::vector<Tree *>> forest) {
         }
     }
     std::cout << "Part 2: " << highest_scenic << std::endl;
+
+    free_memory(forest);
 }
 
 void day_eight_solve() {

@@ -18,6 +18,21 @@ Directory *new_directory(std::string name, Directory *parent) {
     return temp;
 }
 
+void free_memory(Directory *root){
+    std::queue<Directory *> queue;
+    queue.push(root);
+
+    while (!queue.empty()) {
+        Directory *directory = queue.front();
+        queue.pop();
+
+        for (Directory *sub_dir: directory->children) {
+            queue.push(sub_dir);
+        }
+        delete directory;
+    }
+}
+
 int BFS(Directory *root) {
     int answer = 0;
     std::queue<Directory *> queue;
@@ -57,6 +72,8 @@ void day_seven_part_two_solve(Directory *root) {
     }
 
     std::cout << "Part 2: " << smallest_dir << std::endl;
+
+    free_memory(root);
 }
 
 void day_seven_solve() {
