@@ -1,0 +1,8 @@
+# Project exclude paths
+/cmake-build-debug/
+
+# Exclude IDE Files
+/.idea/
+
+# Exclude Git Files
+/.git/
